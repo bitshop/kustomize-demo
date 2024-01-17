@@ -12,6 +12,6 @@ patches:
 namePrefix:
   prod-
 configMapGenerator:
-  - name: nginx-html
+  - name: nginx-html-map
     files:
       - index.html
