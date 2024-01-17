@@ -22,5 +22,5 @@ spec:
         - containerPort: 80
       volumes:
         - name: nginx-html
-          configMap:
+          configMapRef:
             name: nginx-html

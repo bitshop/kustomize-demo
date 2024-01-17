@@ -22,3 +22,7 @@ patches:
 #       name: nginx
 #     fieldPaths:
 #     - spec.template.spec.containers
+configMapGenerator:
+  - name: nginx-html
+    files:
+      - index.html
