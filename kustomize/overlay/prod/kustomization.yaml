@@ -12,3 +12,9 @@ patches:
 - path: html-patch.yaml
 namePrefix:
   prod-
+replacements:
+- name: MY_NGINX_HTML
+  objref:
+    kind: ConfigMap
+    name: nginx-html
+    apiVersion: v1
