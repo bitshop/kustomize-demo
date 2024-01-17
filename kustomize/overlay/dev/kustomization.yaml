@@ -9,18 +9,8 @@ labels:
 patches:
 - path: deployment-patch.yaml
 - path: service-patch.yaml
-# namePrefix:
-#   dev-
-# replacements:
-# - source:
-#     kind: ConfigMap
-#     name: nginx-html
-#   targets:
-#   - select:
-#       kind: Deployment
-#       name: nginx
-#     fieldPaths:
-#     - spec.template.spec.containers
+namePrefix:
+  dev-
 configMapGenerator:
   - name: nginx-html
     files:
