@@ -9,7 +9,6 @@ labels:
 patches:
 - path: deployment-patch.yaml
 - path: service-patch.yaml
-- path: html-patch.yaml
 # namePrefix:
 #   dev-
 # replacements:
