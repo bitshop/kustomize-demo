@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  selector:
+    matchLabels:
+      run: nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - name: nginx
+        volumeMounts:
+          - mountPath: /usr/share/nginx/html/index.html
+            name: nginx-html
+            subPath: index.html
+        image: nginx
+        ports:
+        - containerPort: 80
